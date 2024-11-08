@@ -1,0 +1,6 @@
+Rules of conways game of Life:
+
+1.Any live cell with fewer than two live neighbors dies.(Underpopulation)
+2.Any live cell with two or three live neighbors lives onto the next generation.(Stasis)
+3.Any live cell with more than three live neighbors dies.(Overpopulation)
+4.Any dead cell with exactly three live neighbors becomes a live cell.(Reproduction) 

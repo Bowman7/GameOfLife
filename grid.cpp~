@@ -1,0 +1,19 @@
+#include"grid.hpp"
+#include"raylib.h"
+
+void Grid::Draw(){
+  for(int i=0;i<g_rows;i++){
+    for(int j=0;j<g_cols;j++){
+      Color color;
+      if(cells[i][j] == 0){
+	color = GREEN;
+      }else{
+	color = BLACK;
+      }
+
+      //draw current rectangle
+      DrawRectangle(j*g_cellSize,i*g_cellSize,
+		    g_cellSize,g_cellSize,color);
+    }
+  }
+}
